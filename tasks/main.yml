@@ -171,6 +171,7 @@
     group: root
     mode: 0644
   notify:
+    - Reload systemd
     - Restart docker
   when: daemon_json is not none
 
